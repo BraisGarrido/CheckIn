@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">CheckIn</string>
+    <string name="inicio_sesion">Iniciar sesión</string>
+    <string name="registro">Registrarse</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="rep_pass">Repite contraseña</string>
+    <string name="checkin">Realizar Check in</string>
+    <string name="datos">Datos del cliente</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido1">Primer apellido</string>
+    <string name="apellido2">Segundo apellido</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="tipo_documento">Tipo de documento</string>
+    <string name="numero_coumento">Nº documento</string>
+    <string name="expedicion">  Expedición</string>
+    <string name="sexo">Sexo</string>
+    <string name="nacimiento"> Nacimiento</string>
+    <string name="personales">Datos personales</string>
+    <string name="documento">Datos del documento</string>
+    <string name="lon_password">Deben ser más de 6 caracteres</string>
+    <string name="nuevo_check">Nuevo Check In</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="registros">Registros</string>
+    <string name="nuevo_registro">Nuevo registro</string>
+    <string name="consulta">Consultar check in</string>
+    <string name="agregar">Agregar check in</string>
+    <string name="regresar">Regresar</string>
+    <string name="mostrar">Mostrar check in</string>
+    <string name="slogan">Agiliza tus Check in</string>
+    <string name="descargar">Descargar en PDF</string>
+
+    <string-array name="tipos_documento">
+        <item>Documento nacional de identidad</item>
+        <item>Pasaporte</item>
+        <item>Permiso de conducir</item>
+        <item>Documento de identidad extranjero</item>
+        <item>Permiso de residencia español</item>
+        <item>Permiso de residencia extranjero</item>
+    </string-array>
+
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingresar_vivienda">Ingresar una vivienda</string>
+    <string name="opciones">Opciones</string>
+    <string name="localidad">Localidad</string>
+    <string name="ingr_vivienda">Ingresar vivienda</string>
+    <string name="ingresar_logo">Ingresar logo</string>
+    <string name="descripcion_logo">Selecciona el logo de tu vivienda para verlo reflejado en los partes de viajeros.</string>
+    <string name="nombre_vivienda">Nombre vivienda</string>
+    <string name="datos_vivienda">Datos de la vivienda</string>
+    <string name="edita_datos">Edita los datos</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+</resources>

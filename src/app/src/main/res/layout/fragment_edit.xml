@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OptionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_aplicacion"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan"
+                style="@style/slogan"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/edita_datos"
+            android:layout_marginBottom="10dp"
+            style="@style/titulo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personales"
+            android:layout_marginBottom="30dp"
+            style="@style/titulo_secundario"/>
+
+        <EditText
+            android:id="@+id/edit_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:background="@drawable/edit_style"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/nombre"/>
+
+        <EditText
+            android:id="@+id/edit_apellido1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_style"
+            android:hint="@string/apellido1"/>
+
+        <EditText
+            android:id="@+id/edit_apellido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapCharacters"
+            android:background="@drawable/edit_style"
+            android:hint="@string/apellido2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/calendario"
+                android:background="@drawable/edit_style"
+                android:hint="@string/nacimiento"
+                tools:ignore="Deprecated" />
+
+            <EditText
+                android:id="@+id/edit_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/edit_style"
+                android:hint="@string/sexo"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/documento"
+            android:layout_marginBottom="10dp"
+            style="@style/titulo_secundario"/>
+
+        <EditText
+            android:id="@+id/edit_tipo_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_style"
+            android:hint="@string/tipo_documento"/>
+
+        <EditText
+            android:id="@+id/edit_num_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_style"
+            android:hint="@string/numero_coumento"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_expedicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableStart="@drawable/calendario"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/edit_style"
+                android:hint="@string/expedicion"/>
+
+            <EditText
+                android:id="@+id/edit_nacionalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:inputType="textCapCharacters"
+                android:layout_weight="1"
+                android:background="@drawable/edit_style"
+                android:hint="@string/nacionalidad"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:textAllCaps="false"
+            android:textColor="@color/letra_boton"
+            android:background="@drawable/button_style"
+            android:text="@string/editar"/>
+    </LinearLayout>
+</ScrollView>

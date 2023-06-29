@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_aplicacion"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan"
+                style="@style/slogan"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/apagar"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/letra_boton"
+        style="@style/titulo"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkIn"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:drawableTop="@drawable/a_adir"
+        android:background="@android:color/transparent"
+        android:layout_height="150dp"
+        android:text="@string/checkin"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registros"
+        android:layout_width="match_parent"
+        android:drawableTop="@drawable/lista"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:layout_height="150dp"
+        android:text="@string/registros"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/configuracion"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="30dp"
+        android:src="@drawable/casa"
+        android:backgroundTint="@color/boton_ajustes"/>
+</LinearLayout>
