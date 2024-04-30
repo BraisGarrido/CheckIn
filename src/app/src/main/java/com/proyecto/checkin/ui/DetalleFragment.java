@@ -121,7 +121,7 @@ public class DetalleFragment extends Fragment {
         logo=root.findViewById(R.id.logo);
 
         //Instanciamos la base de datos en firebase para obtener los datos de la vivienda y rellenar los TextView
-        firebaseDatabase=FirebaseDatabase.getInstance("https://checkin-52edb-default-rtdb.europe-west1.firebasedatabase.app/");
+        firebaseDatabase=FirebaseDatabase.getInstance("");
         firebaseDatabase.getReference("vivienda").addValueEventListener(new ValueEventListener() {
             @SuppressLint("SetTextI18n")
             @Override
