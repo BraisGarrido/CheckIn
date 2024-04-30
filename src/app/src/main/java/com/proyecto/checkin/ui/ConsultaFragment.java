@@ -81,8 +81,8 @@ public class ConsultaFragment extends Fragment {
         consultas.setAdapter(adapter);
 
         //Instanciamos la base de datos en firebase para mostrar los datos
-        firebaseDatabase = FirebaseDatabase.getInstance("https://checkin-52edb-default-rtdb.europe-west1.firebasedatabase.app/");
-        firebaseDatabase.getReference("checkIn/checkIn").addValueEventListener(new ValueEventListener() {
+        firebaseDatabase = FirebaseDatabase.getInstance("");
+        firebaseDatabase.getReference("").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 arrayCheckIns.clear();
@@ -150,7 +150,7 @@ public class ConsultaFragment extends Fragment {
                         int selectedId = arrayCheckIns.get(position).getId();
 
                         // Elimino los datos del Firebase Realtime Database
-                        DatabaseReference checkInRef = firebaseDatabase.getReference("checkIn/checkIn").child(String.valueOf(selectedId));
+                        DatabaseReference checkInRef = firebaseDatabase.getReference("").child(String.valueOf(selectedId));
                         checkInRef.setValue(null).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
