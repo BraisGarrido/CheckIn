@@ -135,8 +135,8 @@ public class CheckInFragment extends Fragment {
         cursor = db.rawQuery("SELECT * FROM checkIn", null);
 
         //Instanciamos la base de datos en Firebase para indicar a donde enviar los datos
-        firebaseDatabase = FirebaseDatabase.getInstance("https://checkin-52edb-default-rtdb.europe-west1.firebasedatabase.app/");
-        databaseReference = firebaseDatabase.getReference("checkIn");
+        firebaseDatabase = FirebaseDatabase.getInstance("");
+        databaseReference = firebaseDatabase.getReference("");
         while (cursor.moveToNext()) {
             //Preparamos los datos y los enviamos
             fire_id = cursor.getInt(cursor.getColumnIndex("id"));
