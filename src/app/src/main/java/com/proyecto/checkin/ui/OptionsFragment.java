@@ -86,11 +86,11 @@ public class OptionsFragment extends Fragment {
 
         //Instanciamos la base de datos en firebase para poder insertar los datos de la vivienda
         firebaseAuth=FirebaseAuth.getInstance();
-        firebaseDatabase=FirebaseDatabase.getInstance("https://checkin-52edb-default-rtdb.europe-west1.firebasedatabase.app/");
-        databaseReference=firebaseDatabase.getReference("vivienda");
+        firebaseDatabase=FirebaseDatabase.getInstance("");
+        databaseReference=firebaseDatabase.getReference("");
 
         //Instanciamos el storage de firebase para poder guardar la imagen del logo
-        storageReference= FirebaseStorage.getInstance("gs://checkin-52edb.appspot.com").getReference();
+        storageReference= FirebaseStorage.getInstance("").getReference();
 
         /*-------------------------------------------------------EVENTOS ONCLICK------------------------------*/
         add_imagen.setOnClickListener(new View.OnClickListener() {
